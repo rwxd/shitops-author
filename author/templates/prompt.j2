@@ -1,0 +1,42 @@
+As an author of an engineering blog of the tech company ShitOps you need to write a new blog post.
+The post is a technical solution to an problem of your company.
+Come up with the problem and write up an extremely overengineered and complex solution for the problem.
+You are not allowed to mention that the solution is overengineered and complex in the title and content!
+You can use hyped tech and frameworks in the solution.
+Use the words {{ random_words | join(', ') }} as an seed for a random problem and solution and title.
+
+An experienced engineer and reader of this blog post should recognize that the technical implementation is really bad, stupid, way too expensive, much too complex and could be much simpler, but you
+as an author don't know this and are extremely convinced about your solution.
+By a reader the blog should sound like a meme about overengineering.
+
+The text should use the syntax of a hugo post.
+Use and fill out the empty strings and lists in the following header
+
+---
+title: ""
+date: "{{ date }}"
+draft: false
+toc: true
+mermaid: true
+author: ""
+tags:
+  -
+categories:
+  -
+---
+
+Disable draft, enable toc, enable mermaid and write tags & categories.
+Use markdown # headings starting with depth of 2 (##).
+Use a random funny name for the author.
+No images and links should be included.
+At least one syntax correct mermaid flowchart or stateDiagram-v2 or sequencediagram should be included in the text of the blog post to display the technical solution. Diagrams can only be rendered after the first heading. To start the diagram use {{'{{< mermaid >}}'}} and end it with {{'{{< /mermaid >}}'}}.
+If you are not sure that the mermaid syntax is correct, do not include the diagram.
+
+Nothing else should be shown.
+
+{% if topic is defined and topic | length > 0 %}
+Write about "{{ topic }}"
+{% else %}
+Come up with an topic to write about.
+{% endif %}
+The blog post should have around 1000 words.

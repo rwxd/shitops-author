@@ -1,4 +1,3 @@
-chatgpt @ git+https://github.com/mmabrouk/chatgpt-wrapper@v0.10.6
 typer==0.9.0
 jinja2==3.1.2
 openai==0.27.7

@@ -16,11 +16,15 @@ def create_post(
     github_project: str = typer.Option('rwxd/shitops'),
     debug: bool = typer.Option(False),
     topic: str = typer.Option('', help='Use a specific topic'),
+    dest: Path = typer.Option(..., help='Destination directory to render the template'),
 ):
     if debug:
         init_logger('DEBUG')
     else:
         init_logger('WARNING')
+
+    if not dest.is_dir():
+        raise ValueError(f'{dest} is not a directory')
 
     random_words = get_random_words()
     logger.info(f'Using {len(random_words)} random words: {random_words}')
@@ -30,9 +34,9 @@ def create_post(
         random_words=random_words,
     )
     post = generate_post(rendered_prompt, openai_token)
-    with open(
-        Path().home() / Path(f'dev/shitops/content/posts/{post.filename}'),
-        'w',
-    ) as f:
+    filepath = dest.joinpath(post.filename)
+    with open(filepath, 'w') as f:
         logger.info(f'saving post to {post.filename}')
         f.write(post.content)
+
+    logger.info(f'Saved file to "{filepath}"')

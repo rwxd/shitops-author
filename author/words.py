@@ -3,7 +3,7 @@ import random
 
 def get_random_words(count: int | None = None) -> list[str]:
     if not count:
-        count = random.randint(1, 8)
+        count = random.randint(3, 8)
     random_words = words.split('\n')
     if count > len(random_words):
         raise ValueError(f'only {len(random_words)} words available')
@@ -266,7 +266,7 @@ text-to-speech
 speech-to-text
 autonomous vehicles
 data science
-p2p
+peer-to-peer
 nfc
 internet tv
 biochips
@@ -281,7 +281,7 @@ drones
 solid-state-drives
 apple watch
 bring your own device
-nlp
+natural language processing
 space
 satellites
 mqtt
@@ -336,4 +336,12 @@ search engine
 compiler
 interpreter
 translator
+printer
+finance
+event-driven
+websocket
+trpc
+grpc
+site reliability engineering
+reliable
 '''

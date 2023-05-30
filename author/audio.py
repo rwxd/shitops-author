@@ -40,7 +40,6 @@ def create_podcast_from_blog_post(
     parsed_podcast_text = parse_podcast_content(podcast_content)
     with open('parsed_podcast_text.yaml', 'w') as f:
         _ = yaml.safe_dump([asdict(i) for i in parsed_podcast_text], f)
-    input()
     jingle_audio = AudioSegment.from_mp3(str(jingle))
     tracks = create_podcast_main_track(parsed_podcast_text)
     audio = combine_audio_tracks(intro_audio, jingle_audio, tracks)

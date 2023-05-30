@@ -359,4 +359,31 @@ udp
 wireshark
 ethernet
 ieee
+gitops
+minio
+s3
+gnu hurd
+gentoo
+ebpf
+gnmi
+bgp
+cilium
+fingerprinting
+s3fs
+xmpp
+x11
+wayland
+sway
+matrix
+tesla
+mac os x
+PKI
+open source
+infrastructure as code
+saas
+discord
+quic
+noops
+low code
+no code
 '''

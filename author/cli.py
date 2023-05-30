@@ -5,9 +5,6 @@ from author.gpt import generate_post, Post, Post
 from author.words import get_random_words
 from author.audio import (
     create_podcast_from_blog_post,
-    create_audio_from_text,
-    list_voices,
-    combine_audio_tracks,
 )
 from author.misc import get_filename_of_post
 from datetime import datetime
@@ -15,7 +12,6 @@ from datetime import UTC
 from pathlib import Path
 import openai
 import os
-from pydub import AudioSegment
 
 app = typer.Typer()
 

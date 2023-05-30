@@ -3,8 +3,8 @@ import random
 
 def get_random_words(count: int | None = None) -> list[str]:
     if not count:
-        count = random.randint(3, 8)
-    random_words = words.split('\n')
+        count = random.randint(4, 8)
+    random_words = [w for w in words.split('\n') if w != '']
     if count > len(random_words):
         raise ValueError(f'only {len(random_words)} words available')
     return random.sample(random_words, count)
@@ -392,4 +392,6 @@ metaverse
 cybersecurity mesh
 hyperautomation
 sustainable technology
+function as a service
+platform as a service
 '''

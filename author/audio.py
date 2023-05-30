@@ -113,7 +113,7 @@ def create_audio_from_text(
     # gender=texttospeech.SsmlVoiceGender.NEUTRAL,
     audio_encoding=texttospeech.AudioEncoding.MP3,
 ) -> bytes:
-    logger.info(f'Creating audio for {text}')
+    logger.info(f'Creating audio for "{text}"')
     client = texttospeech.TextToSpeechClient()
     synthesis_input = texttospeech.SynthesisInput(text=text)
     voice_params = texttospeech.VoiceSelectionParams(

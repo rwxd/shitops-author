@@ -6,4 +6,8 @@ TEMPLATE_ENVIRONMENT = Environment(
     autoescape=False, loader=FileSystemLoader(TEMPLATES_DIR), trim_blocks=False
 )
 
-template_prompt: Template = TEMPLATE_ENVIRONMENT.get_template("prompt.j2")
+template_blog_post: Template = TEMPLATE_ENVIRONMENT.get_template("blog_post.j2")
+template_podcast_from_blog_post: Template = TEMPLATE_ENVIRONMENT.get_template(
+    "podcast_from_blog_post.j2"
+)
+template_podcast_intro: Template = TEMPLATE_ENVIRONMENT.get_template('podcast_intro.j2')

@@ -11,5 +11,11 @@ export OPENAI_TOKEN=""
 ```
 
 ```bash
-python3 -m author --debug --dest ~/dev/shitops/content/posts
+nix develop -c $SHELL
+poetry env use python3.11
+poetry update
+```
 
+```bash
+poetry run python3 -m author --debug --dest ~/dev/shitops/content/posts --google-service-account ./shitops.json
+```

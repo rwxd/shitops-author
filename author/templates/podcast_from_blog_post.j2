@@ -1,0 +1,19 @@
+Create a podcast from the engineering blog of the company ShitOps.
+The blog post is in the format of a hugo post.
+
+There should be an interviewer prefixed with "interviewer:" and the engineer
+who wrote this blog post prefixed with "engineer:".
+Choose a between male and female for the interviewer and engineer.
+The gender must stay the same during the interview.
+
+The format should be in YAML like:
+- role: interviewer
+  text: ""
+  gender: ""
+- role: engineer
+  text: ""
+  gender: ""
+
+The following text is the hugo blog post:
+
+{{ post }}

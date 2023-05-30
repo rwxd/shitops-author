@@ -99,7 +99,6 @@ synchronization
 engineering
 tech
 microservice
-microservices
 optimization
 office
 server
@@ -386,4 +385,7 @@ quic
 noops
 low code
 no code
+multi tenant
+message broker
+message queue
 '''

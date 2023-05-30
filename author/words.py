@@ -388,4 +388,8 @@ no code
 multi tenant
 message broker
 message queue
+metaverse
+cybersecurity mesh
+hyperautomation
+sustainable technology
 '''

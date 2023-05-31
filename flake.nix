@@ -36,13 +36,32 @@
 			pkgs.zlib
 			pkgs.libglvnd
 			pkgs.libstdcxx5
+			pkgs.libuuid
+			pkgs.openssl
+			pkgs.libffi
+			pkgs.stdenv.cc.cc.lib
 		  ];
           packages = [
 		    poetry2nix.packages.${system}.poetry
 			pkgs.libstdcxx5
 			pkgs.python311Packages.google-cloud-texttospeech
 			pkgs.ffmpeg
+			pkgs.alsaLib
+			pkgs.util-linux
+			pkgs.libuuid
+			pkgs.openssl
+			pkgs.libffi
+			pkgs.stdenv.cc.cc.lib
 		  ];
+		  env = {
+
+			LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+			pkgs.libuuid
+			pkgs.openssl
+			pkgs.libffi
+			pkgs.stdenv.cc.cc.lib
+			];
+			};
         };
       });
 }

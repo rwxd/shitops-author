@@ -66,3 +66,12 @@ def create_post(
     )
 
     podcast.export(str(filepath).replace('.md', '.mp3'), format='mp3')
+
+
+@app.command()
+def az_tts(
+    source: Path = typer.Option(...),
+    az_region: str = typer.Option('westeurope'),
+    az_subscription: str = typer.Option(...),
+):
+    pass

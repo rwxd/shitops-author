@@ -394,4 +394,22 @@ hyperautomation
 sustainable technology
 function as a service
 platform as a service
+gameboy advance
+fibre channel
+nintendo wii
+sap
+4k
+8k
+checkpoint cloudguard
+vmware nsx-t
+vmware tanzu kubernetes
+design
+zero-trust
+mainframe
+mission-critical
+compliance
+ITIL
+adaptive security appliance
+cisco firepower
+mesh vpn
 '''

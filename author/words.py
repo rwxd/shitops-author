@@ -3,7 +3,7 @@ import random
 
 def get_random_words(count: int | None = None) -> list[str]:
     if not count:
-        count = random.randint(4, 8)
+        count = random.randint(4, 10)
     random_words = [w for w in words.split('\n') if w != '']
     if count > len(random_words):
         raise ValueError(f'only {len(random_words)} words available')
@@ -519,4 +519,69 @@ Microsoft Power Point
 C-Level
 CEO
 CTO
+bfd
+network engineering
+network architecture
+OSI model
+Intrusion Detection System (IDS)
+Intrusion Prevention System (IPS)
+VLAN (Virtual Local Area Network)
+Latency
+Packet loss
+Documentation
+Software-defined networking (SDN)
+Disaster recovery
+traffic engineering
+configuration management
+capacity planning
+audits
+LibreNMS
+helm
+Service Level Agreement (SLA)
+key performance indicator (kpi)
+operational level of agreement (ola)
+kanban
+cmdb
+Rancher
+Techradar
+webshop
+blackbox
+cronjob
+Extract, transform, and load (ETL)
+on call
+business continuity plan (BCP)
+virtual machine
+business intelligence
+Slack
+Microsoft Teams
+F5 Loadbalancer
+lab
+request for help
+request for comment
+powerdns
+bind
+dns resolver
+self hosting
+cisco anyconnect
+Site-2-Site
+ISMS
+Out of Band
+availability
+Private VLAN
+Ansible
+WSL
+Renewable energy
+Green IT
+Green technology
+Internet of Medical Things (IoMT)
+3D printing
+Hyperloop transportation
+Space tourism
+Dark matter exploration
+Cyber-physical systems
+Intelligent transportation systems
+Smart grids
+turing award
+nobel prize
+certificate renewal
 '''

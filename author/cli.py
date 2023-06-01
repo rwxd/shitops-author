@@ -71,6 +71,8 @@ def create_post(
     if not podcast:
         exit(0)
 
+    input('Podcast creation? <CR>')
+
     jingle_audio: AudioSegment = AudioSegment.from_mp3(str(Path('jingle.mp3')))
     if not jingle_audio:
         raise ValueError(f'Could not load jingle.mp3')

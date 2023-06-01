@@ -24,6 +24,12 @@ poetry run python3 -m author --debug --dest ~/dev/shitops/content/posts --google
 docker run -v "$PWD:/app" -e "OPENAI_TOKEN=$OPENAI_TOKEN" test -- --debug --dest ./output --google-service-account ./shitops-d2b15bf38d97.json --az-subscription-key ""
 ```
 
+## Words to generate posts
+
+Under (./author/words.py)[./author/words.py] words can be added to the list.
+
+Engineers at ShitOps master all of these topics and create amazing solutions...
+
 ## Azure Speech Service
 
 ```bash

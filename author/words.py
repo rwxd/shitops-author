@@ -91,7 +91,7 @@ react
 flutter
 mobile
 platform
-time
+time sensitive
 synchronization
 engineering
 tech

@@ -64,8 +64,6 @@ switch
 router
 decentralized
 technology
-reliable
-storage
 solution
 database
 mysql
@@ -80,7 +78,6 @@ firewall
 algorithm
 milliseconds
 seconds
-api
 fastapi
 django
 flask
@@ -101,7 +98,6 @@ tech
 microservice
 optimization
 office
-server
 cooling
 spam
 tape
@@ -109,7 +105,6 @@ drives
 email
 snmp
 imap
-bgp
 ospf
 e-books
 headphones
@@ -374,7 +369,6 @@ x11
 wayland
 sway
 matrix
-tesla
 mac os x
 PKI
 open source
@@ -394,6 +388,35 @@ hyperautomation
 sustainable technology
 function as a service
 platform as a service
+golang
+evpn
+vxlan
+ipv6
+single pane of glass
+network function virtualisation
+tdd
+agile
+agility
+scrum
+distributed ledger
+java
+distributed real-time
+pubsub
+enterprise service bus
+responsive design
+fintech
+10x engineer
+unicorn
+cloud evangelist
+grok
+gnu
+ecosystem
+smart watch
+accelerated
+extreme programming
+homebrew
+homegrown
+build or buy
 gameboy advance
 fibre channel
 nintendo wii

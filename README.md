@@ -26,7 +26,7 @@ docker run -v "$PWD:/app" -e "OPENAI_TOKEN=$OPENAI_TOKEN" test -- --debug --dest
 
 ## Words to generate posts
 
-Under (./author/words.py)[./author/words.py] words can be added to the list.
+Under [./author/words.py](./author/words.py) words can be added to the list.
 
 Engineers at ShitOps master all of these topics and create amazing solutions...
 

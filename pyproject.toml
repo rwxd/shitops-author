@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["rwxd <git@rwxd.de>"]
 readme = "README.md"
-packages = [{include = "shitops_author"}]
+packages = [{include = "author"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

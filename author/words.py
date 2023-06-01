@@ -435,4 +435,88 @@ ITIL
 adaptive security appliance
 cisco firepower
 mesh vpn
+DevOps
+Continuous development
+Continuous delivery
+Homomorphic encryption
+Hyperledger
+Explainable artificial intelligence (XAI)
+Quantum supremacy
+Bioinformatics
+Swarm robotics
+Neuromorphic computing
+Edge intelligence
+Ambient intelligence
+Biohacking
+Cyborg
+Federated learning
+DNA computing
+Augmented reality contact lenses
+Swarm intelligence
+Haptic technology
+Neuroinformatics
+Gesture recognition
+Wearable technology
+Robotic exoskeletons
+Nanoengineering
+Neurofeedback
+Quantum cryptography
+QR Code
+USB
+GPS
+Cloud storage
+Antivirus
+Password
+Browser cache
+Cookies
+E-Commerce
+Fitness tracker
+online shopping
+Self-driving cars
+mobile payment
+automation
+Polymorphism
+Binary tree
+Debugging
+Testing
+Agile development
+Framework
+Profiler
+Test-driven development
+Regression testing
+Integration testing
+Unit testing
+Algorithm
+Recursion
+Version control
+IDE (Integrated Development Environment)
+Functional programming
+Event-driven programming
+Concurrency
+Multithreading
+Asynchronous programming
+Serialization
+Deserialization
+JSON (JavaScript Object Notation)
+XML (Extensible Markup Language)
+Full-stack development
+MVC (Model-View-Controller)
+ORM (Object-Relational Mapping)
+NoSQL
+MongoDB
+Software development lifecycle
+Waterfall model
+Agile methodology
+Pair programming
+CSS (Cascading Style Sheets)
+CCNA
+CCNP
+CCIE
+MCIV
+Microsoft Excel
+Microsoft Word
+Microsoft Power Point
+C-Level
+CEO
+CTO
 '''

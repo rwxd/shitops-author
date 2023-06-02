@@ -55,6 +55,7 @@ def create_post(
     random_words = get_random_words()
     logger.info(f'Using {len(random_words)} random words: {random_words}')
 
+    input(f'Continue with the words? <CR>')
     rendered_prompt = template_blog_post.render(
         date=datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
         topic=topic,

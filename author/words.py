@@ -3,7 +3,7 @@ import random
 
 def get_random_words(count: int | None = None) -> list[str]:
     if not count:
-        count = random.randint(4, 10)
+        count = random.randint(7, 12)
     random_words = [w for w in words.split('\n') if w != '']
     if count > len(random_words):
         raise ValueError(f'only {len(random_words)} words available')
@@ -584,4 +584,7 @@ Smart grids
 turing award
 nobel prize
 certificate renewal
+tensorflow
+hadoop
+numpy
 '''

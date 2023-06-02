@@ -1,4 +1,5 @@
 import typer
+import yaml
 from author.templates import template_blog_post
 from author.logging import init_logger, logger
 from author.words import get_random_words
@@ -9,7 +10,6 @@ from author.audio import (
     create_podcast_text_from_blog_post,
     create_podcast_with_az_tts,
     create_podcast_with_google_tts,
-    mp3_bytes_to_audio_segment,
     create_podcast_intro,
 )
 from datetime import datetime
@@ -20,6 +20,7 @@ from pydub import AudioSegment
 import os
 from typing import Optional
 from yaml import safe_load
+from dataclasses import asdict
 
 app = typer.Typer()
 
@@ -87,6 +88,8 @@ def create_post(
 
     post_text = remove_mermaid_diagrams_from_text(post.content)
     podcast_text = create_podcast_text_from_blog_post(post_text)
+    with open('podcast_text.yaml', 'w') as f:
+        yaml.safe_dump([asdict(i) for i in podcast_text], f)
 
     audio_filepath = str(filepath).replace('.md', '.mp3')
 

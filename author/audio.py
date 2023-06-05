@@ -27,7 +27,7 @@ def parse_podcast_content(content: str) -> PodcastText:
         role = i['role'].lower()
         if role not in ['engineer', 'interviewer']:
             raise ValueError(f'Why is the role {role}')
-        gender = i['gender']
+        gender = i['gender'].lower()
         if gender not in ['male', 'female']:
             raise ValueError(f'We want male or female like voices not {gender}')
         text.append(PodcastSinglePart(role=role, text=i['text'], gender=gender))
@@ -136,5 +136,6 @@ def combine_audio_tracks_to_podcast(
     for i in podcast:
         logger.debug(f'Audio is {audio.duration_seconds} seconds long')
         audio = audio + i
+    audio = audio + jingle
     logger.info(f'Created {audio.duration_seconds} seconds of audio')
     return audio

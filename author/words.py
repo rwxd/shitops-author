@@ -344,7 +344,6 @@ reliable
 2100
 mars
 moon
-saturn
 astronaut
 netbox
 nmap
@@ -587,4 +586,18 @@ certificate renewal
 tensorflow
 hadoop
 numpy
+dotnet
+angular
+vue
+skype
+internet explorer
+stateful
+stateless
+DynamoDB
+Cassandra
+deadline
+PhD
+internship
+overtime
+Postdoc
 '''

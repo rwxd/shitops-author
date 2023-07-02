@@ -157,18 +157,18 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "azure-cognitiveservices-speech"
-version = "1.29.0"
+version = "1.30.0"
 description = "Microsoft Cognitive Services Speech SDK for Python"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "azure_cognitiveservices_speech-1.29.0-py3-none-macosx_10_14_x86_64.whl", hash = "sha256:1beda741dd6e49564e9d970c606f1ea7e007969069842b19327abce119175774"},
-    {file = "azure_cognitiveservices_speech-1.29.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:b189c4248b4adf69fc563abe30780c8f09bad6200414bb2b765abe2d44ed8c96"},
-    {file = "azure_cognitiveservices_speech-1.29.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:e9474e3ea19ed44f80c2aa7bc1c5c5e9711c5dbdf0662cb2eec31ff7821dbfa8"},
-    {file = "azure_cognitiveservices_speech-1.29.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:cea4984bd3fa582c41ba8ec79cd37f55380bb386e09ca155ae2aac343c8bdac5"},
-    {file = "azure_cognitiveservices_speech-1.29.0-py3-none-win32.whl", hash = "sha256:7cdc010e4a4586e78d3a265931520ca0422eed8145d37a7dd1e448e437945e08"},
-    {file = "azure_cognitiveservices_speech-1.29.0-py3-none-win_amd64.whl", hash = "sha256:cdba9d39fd9e7ee7cf49c54e8a3ba2b217469219b3a35cb3c993f32ca00d217c"},
+    {file = "azure_cognitiveservices_speech-1.30.0-py3-none-macosx_10_14_x86_64.whl", hash = "sha256:1d6ab8b6dd50675644e62fd08e6a4dc26a3da9176f9801d9b987a43539acdee0"},
+    {file = "azure_cognitiveservices_speech-1.30.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:6380074fbc29d5f7ec9d7fe6f5de57628d672381e810860c0904936cad90d59d"},
+    {file = "azure_cognitiveservices_speech-1.30.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:120820e54519e50fe9ea4677df0ae3cc39ef432eed9450163238d84e4b2c5b65"},
+    {file = "azure_cognitiveservices_speech-1.30.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:e5ea3af227fd84049f6fe9f42439c615678ee5fe82f14badde33e4bbc0fab019"},
+    {file = "azure_cognitiveservices_speech-1.30.0-py3-none-win32.whl", hash = "sha256:b1c1c3d480a7f30d1999718d765ebb2e1ea85535637b4d5f24c01af903701991"},
+    {file = "azure_cognitiveservices_speech-1.30.0-py3-none-win_amd64.whl", hash = "sha256:317ca6042dc15a29b2d024e1e76010f4a61cdf2c049bc543d84a08353c35d950"},
 ]
 
 [[package]]

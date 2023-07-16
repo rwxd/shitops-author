@@ -61,5 +61,5 @@ def prompt_openai(prompt: str) -> str:
     )
     content = client.choices[0].message.content
     logger.info(f'Text generated with {len(content.split(" "))} words')
-    logger.info(client.usage)
+    logger.debug(client.usage)
     return content

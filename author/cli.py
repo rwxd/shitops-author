@@ -31,7 +31,9 @@ def create_post(
     s3_secret_key: str = typer.Option(..., envvar='S3_SECRET_KEY'),
     debug: bool = typer.Option(False),
     topic: str = typer.Option('', help='Use a specific topic'),
-    dest: Path = typer.Option(..., help='Destination directory to render the template'),
+    dest: Path = typer.Option(
+        Path('./output'), help='Destination directory to render the template'
+    ),
     podcast: bool = True,
     az_region: str = typer.Option('eastus'),
     az_subscription_key: str = typer.Option(..., envvar='AZ_SUBSCRIPTION_KEY'),
@@ -41,9 +43,6 @@ def create_post(
         init_logger('DEBUG')
     else:
         init_logger('INFO')
-
-    if not dest.is_dir():
-        raise ValueError(f'{dest} is not a directory')
 
     openai.api_key = openai_token
 

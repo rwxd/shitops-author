@@ -36,7 +36,7 @@ def generate_post(prompt: str) -> Post:
     )
     content = client.choices[0].message.content
     filename = get_filename_of_post(content)
-    logger.info(client.usage)
+    logger.debug(client.usage)
     return Post(content, filename)
 
 

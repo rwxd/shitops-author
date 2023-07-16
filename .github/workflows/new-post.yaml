@@ -1,0 +1,36 @@
+---
+name: New post
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  markscribe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install packages
+        run: apt-get update -y && apt-get install -y \
+          libssl-dev \
+          build-essentials \
+          libasound2 \
+          ffmpeg
+
+      - name: Install poetry
+        run: pip install poetry
+
+      - name: Debug
+        run: pwd && ls -la
+
+      - name: Setup
+        run: poetry config virtualenvs.create false && poetry install --no-root
+
+      - name: poetry run python3 -m author --no-interactive --dest ./output/

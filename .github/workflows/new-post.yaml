@@ -33,4 +33,5 @@ jobs:
       - name: Setup
         run: poetry config virtualenvs.create false && poetry install --no-root
 
-      - name: poetry run python3 -m author --no-interactive --dest ./output/
+      - name: new post
+        run: poetry run python3 -m author --no-interactive --dest ./output/

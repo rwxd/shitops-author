@@ -17,11 +17,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install packages
-        run: sudo apt-get update -y && sudo apt-get install -y \
-          libssl-dev \
-          libasound2 \
-          ffmpeg
+      - name: Install apt packages
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: libssl-dev libasound2 ffmpeg
+
 
       - name: Install poetry
         run: pip install poetry

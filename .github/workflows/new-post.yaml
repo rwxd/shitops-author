@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install apt packages
-        uses: awalsh128/cache-apt-pkgs-action@latest
+        uses: awalsh128/cache-apt-pkgs-action@v1.3.0
         with:
           packages: libssl-dev libasound2 ffmpeg
 
@@ -34,3 +34,9 @@ jobs:
 
       - name: new post
         run: poetry run python3 -m author --no-interactive --dest ./output/
+        env:
+          OPENAI_TOKEN: ${{ secrets.OPENAI_TOKEN}}
+          AZ_SUBSCRIPTION_KEY: ${{ secrets.AZ_SUBSCRIPTION_KEY }}
+          BLOG_GITHUB_TOKEN: ${{ secrets.BLOG_GITHUB_TOKEN }}
+          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
+          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}

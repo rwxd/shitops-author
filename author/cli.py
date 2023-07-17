@@ -89,5 +89,5 @@ def create_post(
     podcast_audio.export(str(audio_filepath), format='mp3')
 
     post.content = insert_podcast_link_into_blog_post(post.content, audio_filepath.name)
-    upload_blog_post_to_github(github_token, post.filename, post.content)
     upload_podcast_to_s3(audio_filepath, s3_access_key, s3_secret_key)
+    upload_blog_post_to_github(github_token, post.filename, post.content)

@@ -600,4 +600,7 @@ PhD
 internship
 overtime
 Postdoc
+team event
+workshop
+power point presentation
 '''

@@ -10,7 +10,7 @@ def upload_blog_post_to_github(token: str, path: str, content: str):
 
     author = {'name': 'Professional Blogger', 'email': 'musk@shitops.de'}
     data = {
-        'message': f'fix: new blog post {path}',
+        'message': f'fix: new daily blog post {path}',
         # Encode the content into bytes, then base64 encode these bytes for the GitHub API.
         # Finally, decode the result back into a UTF-8 string for JSON compatibility.
         'content': base64.b64encode(content.encode('utf-8')).decode('utf-8'),

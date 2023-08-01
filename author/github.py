@@ -8,7 +8,7 @@ from author.logging import logger
 def upload_blog_post_to_github(token: str, path: str, content: str):
     url = f'https://api.github.com/repos/rwxd/shitops/contents/content/posts/{path}'
 
-    author = {'name': 'Professional Blogger', 'email': 'musk@shitops.de'}
+    author = {'name': '10x Engineer', 'email': 'author@shitops.de'}
     data = {
         'message': f'fix: new daily blog post {path}',
         # Encode the content into bytes, then base64 encode these bytes for the GitHub API.

@@ -5,7 +5,7 @@ from author.misc import get_filename_of_post
 from author.logging import logger
 from author.templates import template_podcast_from_blog_post
 
-ENGINE = 'gpt-3.5-turbo'
+ENGINE = "gpt-3.5-turbo"
 
 
 @dataclass
@@ -15,11 +15,11 @@ class Post:
 
 
 def generate_post(prompt: str) -> Post:
-    logger.info(f'prompting openai')
+    logger.info(f"prompting openai")
     client = openai.ChatCompletion.create(
         model=ENGINE,
         messages=[
-            {'role': 'user', 'content': prompt},
+            {"role": "user", "content": prompt},
         ],
         # What sampling temperature to use, between 0 and 2.
         # Higher values like 0.8 will make the output more random,
@@ -44,7 +44,7 @@ def prompt_openai(prompt: str) -> str:
     client = openai.ChatCompletion.create(
         model=ENGINE,
         messages=[
-            {'role': 'user', 'content': prompt},
+            {"role": "user", "content": prompt},
         ],
         # What sampling temperature to use, between 0 and 2.
         # Higher values like 0.8 will make the output more random,

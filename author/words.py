@@ -4,13 +4,13 @@ import random
 def get_random_words(count: int | None = None) -> list[str]:
     if not count:
         count = random.randint(7, 12)
-    random_words = [w for w in words.split('\n') if w != '']
+    random_words = [w for w in words.split("\n") if w != ""]
     if count > len(random_words):
-        raise ValueError(f'only {len(random_words)} words available')
+        raise ValueError(f"only {len(random_words)} words available")
     return random.sample(random_words, count)
 
 
-words = '''blockchain
+words = """blockchain
 kubernetes
 service mesh
 fast
@@ -603,4 +603,4 @@ Postdoc
 team event
 workshop
 power point presentation
-'''
+"""

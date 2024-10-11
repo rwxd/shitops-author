@@ -1,4 +1,4 @@
-FROM docker.io/python:3.12
+FROM docker.io/python:3.13
 
 RUN apt-get update && apt-get install -y \
 	python3 \
